@@ -5,6 +5,21 @@
         <link href="icons/duck_lg.png" rel="icon" type="image/png">
         <link href="design.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700|Playfair+Display:400i,400" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <script id="project-template" type="text/x-handlebars-template">
+            {{#each projects}}
+            <div class="project-card">
+                <button type="button" class="collapsible">
+                    <h2>{{this.title}}</h2><hr><h2>{{this.date}}</h2></button>   
+                <div class="project-content">
+                    <img src="{{this.src}}" id="{{this.src}}">
+                    <p>{{this.description}}</p>
+                </div>
+            </div>
+            {{/each}}
+        </script>
+        <script src="./projects.js" type="text/javascript" defer></script>
+        <script src="./collapsible.js" type="text/javascript" defer></script>
     </head>
     <body>
         <header>
@@ -21,49 +36,7 @@
         </header>
         <main>
             <h1>Projects</h1>
-            
-            <div class="projects-container">
-                <h2>2019 <hr style="display:inline-block; width:90%;"></h2>
-                <div class="projects-row">
-                    <div class="project-card">
-                        <h3>Placeholder</h3>
-                        <img src="">
-                        <p>
-                            placeholder.
-                        </p>
-                        
-                    </div>
-                    <div class="project-card">
-                        <h3>Placeholder</h3>
-                        <img src=""">
-                        <p>
-                            placeholder.
-                        </p>
-                    </div>
-                </div>
-                <h2>2018 <hr style="display:inline-block; width:90%;"></h2>
-                <div class="projects-row">
-                    <div class="project-card">
-                        <h3>Placeholder</h3>
-                        <img src="">
-                        <p>
-                            placeholder.
-                        </p>
-                        
-                    </div>
-                    <div class="project-card">
-                        <h3>Placeholder</h3>
-                        <img src=""">
-                        <p>
-                            placeholder.
-                        </p>
-                    </div>
-                </div>
-                
-            </div>
-            
-            <br><br>
-            More to come!
+            <div id="projects-container"></div>
         </main> 
         <footer>
             <hr>

@@ -75,6 +75,7 @@ h1 {
 
 main {
     padding: 1rem 7rem;
+    margin-bottom: 0;
 }
 
 footer {
@@ -149,35 +150,55 @@ footer p {
 }
 
 /* Projects */
-.projects-container {
+#projects-container {
     display: flex;
     flex-direction: column;
-}
-
-.projects-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    margin: 0 auto;
 }
 
 .project-card {
     padding: 0;
+    margin: 2rem auto;
     width: 75%;
     display: flex;
+    align-content: flex-start;
     flex-direction: column;
-    align-self: center;
+    flex-shrink: 2;
+    background-color: linen;
 }
 
 .project-card img {
-    width: 50%;
-    height: auto;
+    margin-top: 2%;
+    display: flex;
+    max-height: 25rem;
+    width: auto;
     align-self: center;
+    border: solid black 1px;
+    max-width: 100%;
+    flex-shrink: 3;
 }
 
-.project-card caption {
+.project-card p {
     margin: 2rem auto;
-    padding: 20%;
-    
+    width: inherit;
+}
+
+.project-content {
+    display: none;
+    width: inherit;
+    margin: 0 auto;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.collapsible {
+    width: 100%;
+    padding: 0 1rem;
+    background-color: seashell;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 @media only screen and (max-width: 480px) {
@@ -193,6 +214,10 @@ footer p {
         width: 95vw;
         height: auto;
     }
+
+    .project-content {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 481px) {
@@ -207,5 +232,9 @@ footer p {
     .img-cap {
         width: 75vw;
         height: auto;
+    }
+
+    .project-content {
+        width: 100%;
     }
 }

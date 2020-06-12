@@ -46,18 +46,31 @@ h1 {
     float: right;
 }
 
+.navbar li:last-child {
+    float: left;
+}
+
+.navbar li:hover {
+    background-color: lightgray;
+}
+
+.navbar li:last-child .navbutton:hover {
+    background-color: seashell;
+}
+
 .navbutton {
     display: block;
     text-align: center;
-    padding: 16px;
+    padding: 1rem;
     color: black;
     text-decoration: none;
     font-style: normal;
     font-weight: normal;
 }
 
-.navbutton:hover {
-    background-color: lightgray;
+.navbar li:last-child .navbutton {
+    padding: 0.5rem;
+    float: left;
 }
 
 main {

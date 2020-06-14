@@ -12,14 +12,23 @@
                 <button type="button" class="collapsible">
                     <h2>{{this.title}}</h2><hr><h2>{{this.date}}</h2></button>   
                 <div class="project-content">
-                    <img src="{{this.src}}" id="{{this.src}}">
+                    <img src="{{this.img}}" id="{{this.img}}">
                     <p>{{this.description}}</p>
+                    <div class="links">
+                        {{#if this.website}}
+                            <a href="{{this.website}}" target="blank">View Website</a>
+                        {{/if}}
+                        {{#if this.src}}
+                            <a href="{{this.src}}" target="blank">View Source</a>
+                        {{/if}}
+                    </div>
                 </div>
+                
             </div>
             {{/each}}
         </script>
-        <script src="./projects.js" type="text/javascript" defer></script>
-        <script src="./collapsible.js" type="text/javascript" defer></script>
+        <script src="./js/projects.js" type="text/javascript" defer></script>
+        <script src="./js/collapsible.js" type="text/javascript" defer></script>
     </head>
     <body>
         <header>

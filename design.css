@@ -145,7 +145,7 @@ footer p {
     font-size: 1rem;
 }
 
-.social-link, .website-link {
+.social-link, .website-link, .links a {
     color: salmon;
 }
 
@@ -153,25 +153,25 @@ footer p {
 #projects-container {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 2rem auto;
 }
 
 .project-card {
     padding: 0;
-    margin: 2rem auto;
+    margin: 1rem auto;
     width: 75%;
     display: flex;
     align-content: flex-start;
     flex-direction: column;
     flex-shrink: 2;
-    background-color: linen;
+    background-color: seashell;
 }
 
 .project-card img {
     margin-top: 2%;
     display: flex;
     max-height: 25rem;
-    width: auto;
+    max-width: 90%;
     align-self: center;
     border: solid black 1px;
     max-width: 100%;
@@ -180,21 +180,33 @@ footer p {
 
 .project-card p {
     margin: 2rem auto;
-    width: inherit;
+    width: 70%;
 }
 
 .project-content {
     display: none;
-    width: inherit;
+    width: 99.5%;
     margin: 0 auto;
     align-items: flex-start;
     flex-direction: column;
+    border: solid black 1px;
+    border-top: none;
+}
+
+.links {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.links a {
+    margin: 0 1rem;
 }
 
 .collapsible {
     width: 100%;
+    margin: 0 auto;
     padding: 0 1rem;
-    background-color: seashell;
+    background-color: rgb(247, 235, 226);
     border: solid black 1px;
     display: flex;
     flex-direction: row;

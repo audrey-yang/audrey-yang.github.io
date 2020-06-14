@@ -4,8 +4,7 @@ for (let i = 0; i < cards.length; i++) {
     let button = cards[i].firstElementChild
     button.onclick = () => {
         button.classList.toggle = "active";
-        console.log(button.classList)
-        let content = cards[i].lastElementChild;
+        let content = cards[i].children[1];
         if (content.style.display === "flex") {
             content.style.display = "none";
         } else {

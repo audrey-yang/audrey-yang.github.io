@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>a.y. | projects</title>
+        <title>&lt;a.y./&gt;</title>
         <link href="icons/duck_lg.png" rel="icon" type="image/png">
         <link href="design.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700|Playfair+Display:400i,400" rel="stylesheet">
@@ -9,10 +9,10 @@
         <script id="project-template" type="text/x-handlebars-template">
             {{#each projects}}
             <div class="project-card">
-                <button type="button" class="collapsible">
-                    <h2>{{this.title}}</h2><hr><h2>{{this.date}}</h2></button>   
+                <img src="{{this.img}}">
                 <div class="project-content">
-                    <img src="{{this.img}}" id="{{this.img}}">
+                    <h2>{{this.title}}</h2>
+                    <h3 style="margin:0;">{{this.date}}</h3>
                     <p>{{this.description}}</p>
                     <div class="links">
                         {{#if this.website}}
@@ -28,23 +28,25 @@
             {{/each}}
         </script>
         <script src="./js/projects.js" type="text/javascript" defer></script>
-        <script src="./js/collapsible.js" type="text/javascript" defer></script>
     </head>
     <body>
         <header>
             <nav>
-                <ul class="navbar">
-                    <li><a class="navbutton" href="./index.html">
-                        <img src="icons/home.svg" width="17" height="17"></a></li>
-                    <li><a class="navbutton" href="./files/Resume.pdf">Resume</a></li>
-                    <li><a class="navbutton" href="./projects.html">Projects</a></li>
-                    <li><a class="navbutton" href="./index.html"
-                        style="font-family:'Playfair Display'; font-size: 1.5rem;">a.y.</a></li>
-                </ul>
+                <header>
+                    <nav>
+                        <ul class="navbar">
+                            <li><a class="navbutton" href="./index.html">
+                                <img src="icons/home.svg" width="17" height="17"></a></li>
+                            <li><a class="navbutton" href="./projects.html">Projects</a></li>
+                            <li><a class="navbutton" href="./index.html"> &lt;a.y./&gt; 
+                                </a></li>
+                        </ul>
+                    </nav>
+                </header>
             </nav>
         </header>
         <main>
-            <h1>Projects</h1>
+            <h1 style="text-align: center;">Projects</h1>
             <div id="projects-container"></div>
         </main> 
         <footer>

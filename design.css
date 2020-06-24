@@ -1,9 +1,14 @@
 /* General */
+html {
+    font-family: 'Anonymous Pro', 'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 17px;
+    letter-spacing: 1.3px;
+}
+
 body {
     background-color: white;
     padding: 2em;
-    font-family: Monaco, 'Courier New', Courier, monospace;
-    font-weight: normal;
     text-align: left;
     position: relative;
     min-height: 90vh;
@@ -19,6 +24,7 @@ h1, h2, h3, h5, h6 {
 
 h1 {
     font-style: italic;
+    font-weight: bold;
 }
 
 h4 {

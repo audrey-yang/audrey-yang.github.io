@@ -155,10 +155,6 @@ footer p {
     width: 48%;
 }
 
-.project-card:hover .project-content {
-    opacity: 0.9;
-}
-
 .project-card img {
     display: flex;
     width: 100%;

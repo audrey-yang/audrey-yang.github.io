@@ -1,6 +1,6 @@
 /* General */
 html {
-    font-family: 'Anonymous Pro', 'Courier New', Courier, monospace;
+    font-family: 'Open Sans', cursive;
     font-weight: normal;
     font-size: 17px;
     letter-spacing: 1.3px;
@@ -8,7 +8,6 @@ html {
 
 body {
     background-color: white;
-    padding: 2rem;
     text-align: left;
     position: relative;
     min-height: 90vh;
@@ -19,6 +18,7 @@ main {
 }
 
 h1, h2, h3, h5, h6 {
+    font-family: 'Proza Libre', cursive;
     font-weight: 400;
 }
 
@@ -35,6 +35,20 @@ h4 {
     font-weight: 400;
     font-style: normal;
     font-size: 1.5rem;
+}
+
+a {
+    color: plum;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.facts li {
+    margin: 5px 0;
 }
 
 /* NavBar */
@@ -71,14 +85,20 @@ h4 {
     font-weight: normal;
 }
 
+.navbutton img {
+    padding-top: 0.25rem;
+}
+
 .navbar li:last-child .navbutton {
     float: left;
 }
 
+/* Footer */
 footer {
+    border-top: 1px solid black;
     position: absolute;
     bottom: 1rem;
-    width: 95vw;
+    width: 100%;
     height: 2.5rem;
 }
 
@@ -91,22 +111,36 @@ footer p {
 }
 
 /* About */
+.name {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.name h1 {
+    font-size: 4rem;
+}
+
+.name h4 {
+    margin: 0;
+}
+
 .about {
-    margin-top: 2rem;
+    margin-top: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: white;
+    min-height: 75vh;
 }
 
 .col {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
     width: 45%;
     padding: 0 1rem;
     margin: 1rem auto;
-    justify-content: center;
-    background-color: lavender;
 }
 
 .col img {
@@ -125,17 +159,13 @@ footer p {
     margin: 1rem auto;
 }
 
-.website-link, .links a {
-    color: plum;
-}
-
 .social-link {
-    margin: 0.5rem;
+    margin: 1rem;
     text-decoration: none;
 }
 
 .social-link img {
-    width: 26px;
+    width: 2.5rem;
 }
 
 /* Projects */
@@ -152,7 +182,11 @@ footer p {
     align-content: flex-start;
     flex-direction: column;
     margin: 1rem auto;
-    width: 48%;
+    width: 47%;
+}
+
+.project-card h2 {
+    font-weight: bold;
 }
 
 .project-card img {
@@ -199,40 +233,80 @@ footer p {
 
 @media only screen and (max-width: 480px) {
     body {
-        padding: 0.5rem 0.5rem;
+        padding: 0;
+        margin: 0;
     }
 
-    .about, #project-content {
-        margin-top: 0;
-        width: 100%;
+    h1, .name h1 {
+        font-size: 1.4rem;
     }
 
-    h1 {
-        font-size: 1.2rem;
-    }
-
-    h2, h3, h4, h5, p, a{
+    h2, h3 {
         font-size: 0.8rem;
     }
 
-    .col {
+    h4, h5, p, a, li {
+        font-size: 0.7rem;
+    }
+
+    .navbar img {
+        width: 11px;
+        height: 11px;
+    }
+
+    .about {
+        margin-top: 0;
+        padding: 0;
         width: 100%;
+    }
+
+    .col {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .bio {
+        padding: 0.5rem;
+    }
+
+    .profpic {
+        width: 100%;
+    }
+
+    .facts {
+        padding-left: 1rem;
+    }
+
+    #projects-container {
+        margin-top: 0;
+        padding: 0.5rem;
     }
 
     .project-card {
         width: 100%;
     }
 
-    .project-content p, .project-content h2 {
-        margin: 0.5rem 1rem;
+    .project-content {
+        margin: 0;
+        padding: 0;
     }
+
+    .project-content p, .project-content h2 {
+        margin: 0.25rem;
+    }
+
+    .social-link {
+        margin: 0.5rem;
+    }
+    
+    .social-link img {
+        width: 1.5rem;
+    }
+    
 }
 
 @media only screen and (max-width: 1025px) and (min-width: 481px) {
-    body {
-        padding: 0.5rem 1rem;
-    }
-
     .about, #project-content {
         margin-top: 0;
     }
@@ -242,10 +316,10 @@ footer p {
     }
 
     h1 {
-        font-size: 1.5rem;
+        padding: 0;
     }
 
-    h2, h3, h4, h5, p, .links a {
+    h2, h3, h4, h5, p, .links a, li {
         font-size: 1rem;
     }
 
@@ -253,7 +327,15 @@ footer p {
         width: 100%;
     }
 
-    .project-content p {
-        margin: 0.5rem 1rem;
+    .project-card p {
+        margin: 0.5rem 0.25rem;
+    }
+
+    .social-link {
+        margin: 0.5rem;
+    }
+    
+    .social-link img {
+        width: 1.5rem;
     }
 }

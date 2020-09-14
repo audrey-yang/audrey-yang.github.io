@@ -4,41 +4,50 @@ const template = Handlebars.compile(src);
 const compiledHtml = template({
     projects: [
         {
+            date: "August 2020",
+            title: "Seat Booker",
+            img: "./pics/project/clip-seatbooker.JPG",
+            description: "To help my church's COVID-19 reopening effort, I created this app, which allows users to reserve seats and tracks weekly attendance.",
+            tech: "Django, Python, HTML, CSS, Javscript",
+            website: "http://seatbooker.herokuapp.com/"
+        },
+        {
+            date: "July 2020",
+            title: "Deep Sea Race",
+            context: "HackItShipIt Hackathon",
+            img: "./pics/project/clip-deep-sea-race.JPG",
+            description: "I collaborated with my friend Lucy to make this app. It introduces the user to some ocean creatures and simulates of how fast the animals would move in a race.",
+            tech: "Java",
+            src: "https://github.com/gujiguj/Deep-Sea-Race"
+        },
+        {
             date: "June 2020",
             title: "Productivity Sticky Space",
+            context: "Same Home Different Hacks Hackathon",
             img: "./pics/project/clip-board.JPG",
-            description: "For the Same Home Different Hacks Hackathon, I collaborated with my friend Lucy (https://github.com/gujiguj) to create a bulletin-board app with moveable sticky notes. We used HTML, CSS, and Javascript and hosted the website on GitHub Pages",
+            description: "I collaborated with my friend Lucy to create a bulletin-board app with moveable sticky notes.",
+            tech: "HTML, CSS, Javascript",
             website: "https://gujiguj.github.io/productivity-sticky-space/",
             src: "https://github.com/gujiguj/productivity-sticky-space"
         },
         {
             date: "June 2020",
-            title: "Personal Website",
-            img: "./pics/project/clip-website.JPG",
-            description: "This very website! I created it using HTML, CSS, and JavaScript, and it is hosted using GitHub Pages.",
-            src: "https://github.com/audrey-yang/audrey-yang.github.io"
-        },
-        {
-            date: "June 2020",
             title: "Mini-Instagram",
+            context: "PennApps Development Team Challenge",
             img: "./pics/project/clip-mini-instagram.JPG",
-            description: "As part of a technical challenge for the PennApps Development Team, I created a photo-sharing web application using Django. On the site, users can upload images with captions and like and comment on their own and other users' photos.",
+            description: "I created a photo-sharing web application on which, users can upload images with captions and like and comment on their own and other users' photos.",
+            tech: "Django, Python, HTML, CSS",
             src: "https://github.com/audrey-yang/pennapps-dev-challenge"
         },
         {
             date: "December 2019",
             title: "Gravity",
+            context: "CIS 120: Programming Languages and Techniques",
             img: "./pics/project/clip-gravity.JPG",
-            description: "This game, based off of Quizlet's Gravity, was my final project for CIS 120 (Programming Languages and Techniques). I used Java's Swing Library to create an interactive application where players upload a list of vocabulary and definitions and input the definition for every item before time runs out.",
+            description: "This game is based off of Quizlet's Gravity. I used Java's Swing Library to create an app where players upload vocabulary and input the definition for every item before time runs out.",
+            tech: "Java",
             src: "https://github.com/audrey-yang/cis120-final-project"
-        },
-        {
-            date: "July 2018",
-            title: "UD Language Learning & Bilingualism Lab Website",
-            img: "./pics/project/clip-llblab.JPG",
-            description: "As a part of my internship at the LLB Lab, I created the lab website using Wix.",
-            website: "https://udllblab.wixsite.com/home"
-        },
+        }
     ]
 });
 

@@ -1,6 +1,6 @@
 /* General */
 html {
-    font-family: 'Open Sans', cursive;
+    font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     font-size: 17px;
     letter-spacing: 1.3px;
@@ -18,7 +18,7 @@ main {
 }
 
 h1, h2, h3, h5, h6 {
-    font-family: 'Proza Libre', cursive;
+    font-family: 'Proza Libre', sans-serif;
     font-weight: 400;
 }
 
@@ -31,7 +31,7 @@ h1 {
 
 h4 {
     margin-top: 1rem;
-    font-family: 'Tahoma', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.5rem;
@@ -116,8 +116,16 @@ footer p {
     text-align: center;
 }
 
-.name h1 {
+.nametag {
+    margin: 0 auto;
     font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.nametag h1 {
+    margin: 1rem;
 }
 
 .name h4 {
@@ -143,7 +151,7 @@ footer p {
     margin: 1rem auto;
 }
 
-.col img {
+.profpic {
     width: 100%;
     height: auto;
 }

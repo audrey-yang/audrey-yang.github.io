@@ -92,7 +92,7 @@ em {
 
 .navbutton img {
     position: absolute;
-    top: 19px;
+    top: 20px;
     right: 10px;
 }
 
@@ -162,6 +162,12 @@ footer p {
     display: flex; 
     flex-direction: row;
     margin-bottom: 0.75rem;
+}
+
+.intro, .hello img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .profpic {

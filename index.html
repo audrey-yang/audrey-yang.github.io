@@ -6,33 +6,6 @@
         <link href="icons/icon.png" rel="icon" type="image/png">
         <link href="design.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Proza+Libre:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-        <script id="project-template" type="text/x-handlebars-template">
-            {{#each projects}}
-            <div class="project-card">
-                <img src="{{this.img}}">
-                <div class="project-content">
-                    <h2>{{this.title}}</h2>
-                    {{#if this.context}}
-                        <h3 style="margin:0; font-style: italic;">{{this.context}}</h3>
-                    {{/if}}
-                    <h3 style="margin:0;">{{this.date}}</h3>
-                    <p>{{this.description}}</p>
-                    <p style="margin-top:0;">Technologies: {{this.tech}}</p>
-                    <div class="links">
-                        {{#if this.website}}
-                            <a href="{{this.website}}" target="blank">View Website</a>
-                        {{/if}}
-                        {{#if this.src}}
-                            <a href="{{this.src}}" target="blank">View Source</a>
-                        {{/if}}
-                    </div>
-                </div>
-                
-            </div>
-            {{/each}}
-        </script>
-        <script src="./js/projects.js" type="text/javascript" defer></script>
         <script src="./js/main.js" type="text/javascript" defer></script>
     </head>
     <body>
@@ -41,7 +14,7 @@
                 <ul class="navbar">
                     <li><a class="navbutton" href="./index.html">
                         <img src="icons/home.svg" width="17" height="17"></a></li>
-                    <li><a class="navbutton" href="#projects">Projects</a></li>
+                    <li><a class="navbutton" href="./projects.html">Projects</a></li>
                     <li><a class="navbutton" href="./index.html"> &lt;a.y./&gt; 
                         </a></li>
                 </ul>
@@ -51,24 +24,27 @@
             <div class="name">
                 <div class="nametag">
                     <h1>Audrey Yang</h1>
-                    <img src="icons/icon.png" width="100" height="95">
+                    <img class="birb" src="icons/icon.png">
                 </div>
                 <h4>['ɔ.d͡ʒɹi 'jɑŋ]</h4>
             </div>
             
             <div id="about" class="about">
-                <div class="col" style="background-color: lavender;">
-                    <img class="profpic" src="./pics/prof.gif">
-                </div>
                 <div class="col">
                     <section class="bio">
-                        <em>Hello, I'm Audrey!</em> 
-                        <p>I strive to learn something new every day, 
-                            and I hope do meaningful work that benefits society someday.</p>
+                        <div class="hello">
+                            <img class="profpic" src="./pics/prof.jpeg">
+                            <div class="intro">
+                                <em>Hello, I'm Audrey!</em> 
+                                <p>I strive to learn something new every day and enjoy the 
+                                    journey of life as much as possible.                         
+                                </p>
+                            </div>
+                        </div>
                         
                         <em>What I do</em>
-                        <p>I study Computer Science and Linguistics at the University of Pennsylvania, 
-                            and I'm currently a sophomore. Besides taking classes, 
+                        <p>I'm a second-year student at the University of Pennsylvania
+                            studying Computer Science and Linguistics. Besides taking classes, 
                             I'm doing NLP research at the 
                             <a href="https://www.med.upenn.edu/" target="_blank">
                                 Perelman School of Medicine</a>. I'm also a member of the 
@@ -113,12 +89,8 @@
                             <img src="./icons/resume.png">    
                         </a> 
                     </section>
+                    <br>
                 </div>
-            </div>
-            <div id="projects" class="projects">
-                <h1 style="text-align: center;">Projects</h1>
-                <div id="projects-container"></div>
-
             </div>
         </main>
         <footer>

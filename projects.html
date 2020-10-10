@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>&lt;a.y./&gt;</title>
+        <link href="icons/icon.png" rel="icon" type="image/png">
+        <link href="design.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Proza+Libre:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <script id="project-template" type="text/x-handlebars-template">
+            {{#each projects}}
+            <div class="project-card">
+                <img src="{{this.img}}">
+                <div class="project-content">
+                    <h2>{{this.title}}</h2>
+                    {{#if this.context}}
+                        <h3 style="margin:0; font-style: italic;">{{this.context}}</h3>
+                    {{/if}}
+                    <h3 style="margin:0;">{{this.date}}</h3>
+                    <p>{{this.description}}</p>
+                    <p style="margin-top:0;">Technologies: {{this.tech}}</p>
+                    <div class="links">
+                        {{#if this.website}}
+                            <a href="{{this.website}}" target="blank">View Website</a>
+                        {{/if}}
+                        {{#if this.src}}
+                            <a href="{{this.src}}" target="blank">View Source</a>
+                        {{/if}}
+                    </div>
+                </div>
+                
+            </div>
+            {{/each}}
+        </script>
+        <script src="./js/projects.js" type="text/javascript" defer></script>
+        <script src="./js/main.js" type="text/javascript" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <li><a class="navbutton" href="./index.html">
+                        <img src="icons/home.svg" width="17" height="17"></a></li>
+                    <li><a class="navbutton" href="#projects">Projects</a></li>
+                    <li><a class="navbutton" href="./index.html"> &lt;a.y./&gt; 
+                        </a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="projects" class="projects">
+                <h1 style="text-align: center;">Projects</h1>
+                <div id="projects-container"></div>
+            </div>
+        </main>
+        <footer>
+            <p>made with ♥︎ in hockessin, de</p>
+        </footer>    
+    </body>
+    
+</html>

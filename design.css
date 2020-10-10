@@ -41,6 +41,10 @@ a {
     color: plum;
 }
 
+a:hover {
+    opacity: 0.6;
+}
+
 em {
     font-style: normal;
     font-weight: bold;
@@ -67,12 +71,13 @@ em {
     float: left;
 }
 
-.navbar li:hover {
-    background-color: lavender;
+.navbar li .navbutton:hover {
+    opacity: 0.7;
 }
 
 .navbar li:last-child .navbutton:hover {
     background-color: white;
+    opacity: 0.7;
 }
 
 .navbutton {
@@ -86,7 +91,9 @@ em {
 }
 
 .navbutton img {
-    padding-top: 0.25rem;
+    position: absolute;
+    top: 19px;
+    right: 10px;
 }
 
 .navbar li:last-child .navbutton {
@@ -146,14 +153,28 @@ footer p {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 45%;
     padding: 0 1rem;
     margin: 1rem auto;
+    max-width: 38rem;
+}
+
+.hello {
+    display: flex; 
+    flex-direction: row;
+    margin-bottom: 0.75rem;
 }
 
 .profpic {
-    width: 100%;
-    height: auto;
+    min-width: 12rem;
+    width: 30%; 
+    padding: 0 1.5rem 0.5rem 0; 
+    border-radius: 50%;
+    justify-self: center;
+}
+
+.birb {
+    width: 5rem;
+    height: 4.8rem;
 }
 
 .bio {
@@ -176,12 +197,17 @@ footer p {
     width: 2.5rem;
 }
 
+.social-link img:hover {
+    opacity: 0.6;
+}
+
 /* Projects */
 #projects-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 2rem auto;
+    width: 90%;
 }
 
 .project-card {
@@ -245,27 +271,35 @@ footer p {
         margin: 0;
     }
 
-    h1, .name h1 {
-        font-size: 1.4rem;
+    h1, .nametag h1 {
+        font-size: 1.6rem;
     }
 
-    h2, h3 {
+    h2, h3, h4, em {
         font-size: 0.8rem;
     }
 
-    h4, h5, p, a, li {
+    h5, p, a, li {
         font-size: 0.7rem;
     }
 
-    .navbar img {
-        width: 11px;
-        height: 11px;
+    .navbutton img {
+        position: absolute;
+        top: 13.25px;
+        right: 11px;
+        width: 14px;
+        height: 14px;
     }
 
     .about {
         margin-top: 0;
         padding: 0;
         width: 100%;
+    }
+
+    .birb {
+        width: 3rem;
+        height: 2.8rem;
     }
 
     .col {
@@ -279,16 +313,24 @@ footer p {
     }
 
     .profpic {
-        width: 100%;
+        min-height: 5rem;
+        min-width: 9rem;
+        height: 90%;
     }
 
     .facts {
         padding-left: 1rem;
     }
 
+    .projects {
+        width: 100%;
+    }
+
     #projects-container {
         margin-top: 0;
         padding: 0.5rem;
+        margin: 0;
+        width: 95%;
     }
 
     .project-card {
@@ -327,7 +369,7 @@ footer p {
         padding: 0;
     }
 
-    h2, h3, h4, h5, p, .links a, li {
+    h2, h3, h5, p, .links a, li {
         font-size: 1rem;
     }
 

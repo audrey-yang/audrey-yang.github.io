@@ -15,6 +15,7 @@ body {
 
 main {
     padding-bottom: 2.5rem;
+    min-height: 85vh;
 }
 
 h1, h2, h3, h5, h6 {
@@ -90,10 +91,9 @@ em {
     font-weight: normal;
 }
 
-.navbutton img {
-    position: absolute;
-    top: 20px;
-    right: 10px;
+.home img {
+    position: relative;
+    top: 1.55px;
 }
 
 .navbar li:last-child .navbutton {
@@ -102,7 +102,7 @@ em {
 
 /* Footer */
 footer {
-    border-top: 1px solid black;
+    border-top: 1px solid gray;
     position: absolute;
     bottom: 1rem;
     width: 100%;
@@ -209,20 +209,19 @@ footer p {
 
 /* Projects */
 #projects-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 2rem auto;
-    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    gap: 1rem;
+    margin: 2rem auto 3rem auto;
+    max-width: 75%;
 }
 
 .project-card {
+    text-align: left;
     position: relative;
     display: flex;
     align-content: flex-start;
     flex-direction: column;
-    margin: 1rem auto;
-    width: 47%;
 }
 
 .project-card h2 {
@@ -239,36 +238,63 @@ footer p {
 }
 
 .project-content {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 1px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    transition: 0.5s ease;
+    border: solid gray 1px;
     display: flex;
-    justify-self: center;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
     flex-direction: column;
-    opacity: 0;
-    background-color: lavender;
-    text-align: center;
+    align-items: flex-start;
+    position: relative;
+    height: 100%;
+    padding: 1rem 0.75rem;
 }
 
 .project-content p {
-    margin: 1rem 2rem;
+    text-align: left;
+    padding: 0 1rem;
 }
 
-.links {
-    margin: 0 auto;
-    padding-bottom: 2rem;
+.project-context {
+    font-style: italic;
 }
 
-.links a {
+.project-tech {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: flex-end;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    list-style: none;
     margin: 0 1rem;
+    padding: 0;
+}
+
+.project-tech li {
+    margin-right: 15px;
+}
+
+.project-tag {
+    margin: 0 1rem;
+    display: inline;
+}
+
+.project-tag a, .project-tag h2 {
+    font-size: 1.3rem;
+    display: inline;
+    text-decoration: none;
+}
+
+.project-link {
+    margin: 0;
+}
+
+.project-link img {    
+    border: none;
+    display: inline;
+    width: 1.1rem;
+    height: 1.1rem;
 }
 
 @media only screen and (max-width: 480px) {
@@ -277,22 +303,33 @@ footer p {
         margin: 0;
     }
 
+    .navbar {
+        border-bottom: solid 1px gray;
+    }
+
+    .name {
+        margin: 0;
+    }
+
+    .name h4 {
+        margin-bottom: 1.5rem;
+    }
+
     h1, .nametag h1 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     h2, h3, h4, em {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     h5, p, a, li {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
-    .navbutton img {
-        position: absolute;
-        top: 13.25px;
-        right: 11px;
+    .home img {
+        position: relative;
+        top: 1.5px;
         width: 14px;
         height: 14px;
     }
@@ -328,28 +365,9 @@ footer p {
         padding-left: 1rem;
     }
 
-    .projects {
-        width: 100%;
-    }
-
-    #projects-container {
+    .contact {
+        padding-top: 0rem;
         margin-top: 0;
-        padding: 0.5rem;
-        margin: 0;
-        width: 95%;
-    }
-
-    .project-card {
-        width: 100%;
-    }
-
-    .project-content {
-        margin: 0;
-        padding: 0;
-    }
-
-    .project-content p, .project-content h2 {
-        margin: 0.25rem;
     }
 
     .social-link {
@@ -359,12 +377,29 @@ footer p {
     .social-link img {
         width: 1.5rem;
     }
-    
+
+    footer p {
+        text-align: center;
+        width: 100%;
+    }
+
+    #projects-container {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+        gap: 1rem;
+        margin: 2rem auto 3rem auto;
+        max-width: 75%;
+    }
 }
 
 @media only screen and (max-width: 1025px) and (min-width: 481px) {
     .about, #project-content {
         margin-top: 0;
+    }
+
+    #projects-container {
+        grid-template-columns: 1fr;
     }
 
     .col {
@@ -377,14 +412,6 @@ footer p {
 
     h2, h3, h5, p, .links a, li {
         font-size: 1rem;
-    }
-
-    .project-card {
-        width: 100%;
-    }
-
-    .project-card p {
-        margin: 0.5rem 0.25rem;
     }
 
     .social-link {

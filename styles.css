@@ -14,7 +14,7 @@ body {
 }
 
 main {
-    padding-bottom: 2.5rem;
+    padding-bottom: 3rem;
     min-height: 85vh;
 }
 
@@ -111,10 +111,24 @@ footer {
 
 footer p {
     font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    text-justify: distribute;
+    text-align: left;
     height: auto;
-    width: 20rem;
+    margin-left: 1rem;
+}
+
+.footer-links {
+    float: right;
+    margin-right: 1rem;
+}
+
+.footer-link {
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-link img {
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 /* About */
@@ -212,7 +226,7 @@ footer p {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
     gap: 1rem;
-    margin: 2rem auto 3rem auto;
+    margin: 2rem auto 5rem auto;
     max-width: 75%;
 }
 

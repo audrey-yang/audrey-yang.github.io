@@ -3,7 +3,10 @@ import "../styles/styles.css";
 
 const Footer = () => {  
 	return (
-		<footer>audrey r. yang / from philly, with ♥︎</footer> 
+		<footer>
+			auyang@seas.upenn.edu <br />
+			from philly, with ♥︎
+		</footer> 
 	);
   }
 

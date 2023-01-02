@@ -8,19 +8,12 @@ module.exports = {
   plugins: [
     "gatsby-plugin-mdx",
     "gatsby-plugin-offline",
+    "gatsby-plugin-postcss",
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'static/favicon.ico',
+        icon: 'static/icons/icon.png',
       },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        "name": "pages",
-        "path": "./src/pages/"
-      },
-      __key: "pages"
     },
     {
       resolve: 'gatsby-source-filesystem',

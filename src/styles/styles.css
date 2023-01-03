@@ -86,18 +86,55 @@
     
     footer {
         font-family: 'Courier New', Courier, monospace;
-        @apply w-full text-center pb-2;
+        @apply w-full text-center pb-2 mt-2;
     }
 
     .sidebar {
         width: 4rem;
         bottom: 1.5rem;
-        @apply fixed flex flex-col justify-end items-center;
+        @apply md:flex sm:hidden fixed flex-col justify-end items-center;
     }
 
     .sidebar-link {
         color: black;
         @apply py-2 px-0 hover:opacity-50;
+    }
+
+    .react-tabs [role=tab],
+    .react-tabs [role=tab]:focus,
+    .react-tabs [role=tab]:focus:after {
+        @apply p-2 w-full text-sm italic border-l-2 border-gray-100;
+    }
+
+    .react-tabs [role=tablist],
+    .react-tabs [role=tablist]:focus,
+    .react-tabs [role=tablist]:focus:after {
+        @apply flex sm:flex-row md:flex-col items-start mr-4;
+    }
+
+    .react-tabs {
+        @apply flex flex-col md:flex-row p-2 mt-2;
+    }
+
+    .inner-tab-panel ul {
+        list-style: url("double-arrow-right-icon.svg") outside;
+        @apply ml-4;
+    }
+    
+    .inner-tab-panel h2 {
+        @apply m-0 text-base;
+    }
+
+    .inner-tab-panel h5 {
+        @apply italic font-bold text-sm;
+    }
+
+    .inner-tab-panel ul {
+        @apply mt-2;
+    }
+
+    .inner-tab-panel li {
+        @apply text-sm mb-1;
     }
 }
 

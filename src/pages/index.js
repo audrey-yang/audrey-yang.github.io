@@ -1,9 +1,9 @@
 import * as React from "react";
-import { graphql } from "gatsby";
 
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
+import ExperienceTabs from '../components/ExperienceTabs';
 import Intro from '../../content/intro.mdx';
 import About from '../../content/about.mdx';
 import Contact from '../../content/contact.mdx';
@@ -31,6 +31,7 @@ const IndexPage = () => {
 						</div>
 						<About />
 						<h3>Experience</h3>
+						<ExperienceTabs />
 						<h3>Some things I've built</h3>
 						<Contact />
 					</div>
@@ -40,15 +41,5 @@ const IndexPage = () => {
 		</div>
 	);
 }
-
-export const query = graphql`
-	query {
-		allMdx {
-			nodes {
-				body
-			}
-		}
-	}
-`;
 
 export default IndexPage;

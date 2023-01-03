@@ -126,7 +126,7 @@
     }
 
     .inner-tab-panel ul {
-        list-style: url("double-arrow-right-icon.svg") outside;
+        list-style: outside;
         @apply ml-4;
     }
     

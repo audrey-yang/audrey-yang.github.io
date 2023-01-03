@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "gatsby";
 
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
@@ -24,15 +25,16 @@ const IndexPage = () => {
 					</div>
 					<div className="content">
 						<div className="flex flex-row items-center">
-							<img src={Me} className="min-width-[12rem] w-2/6 rounded-[50%] pt-6 pl-2" />
 							<div className="flex-col px-4">
 								<Intro />
 							</div>
+							<img src={Me} className="min-width-[12rem] w-2/6 rounded-[50%] pt-6 pl-2" />
 						</div>
 						<About />
 						<h3>Experience</h3>
 						<ExperienceTabs />
 						<h3>Some things I've built</h3>
+						<p>Check out some of my past projects <Link to="/projects">here</Link>.</p>
 						<Contact />
 					</div>
 				</main>

@@ -1,5 +1,6 @@
 import * as React from "react";
 import { FaHome } from "react-icons/fa";
+import { Link } from "gatsby";
 import "../styles/styles.css";
 
 const Navbar = () => {  
@@ -8,11 +9,11 @@ const Navbar = () => {
 			<ul className="navbar">
 				<li>
 					<a className="navbutton home" href="/">
-						<FaHome size={21} />
+						<FaHome size={23} />
 					</a>
 				</li>
-				<li><a className="navbutton" href="/projects">Projects</a></li>
-				<li><a className="navbutton" href="/">a.y.</a></li>
+				<li><Link className="navbutton" to="/projects">Projects</Link></li>
+				<li><Link className="navbutton" href="/">a.y.</Link></li>
 			</ul>
 		</nav>
 	);

@@ -16,7 +16,7 @@ const ExperienceTabs = () => {
 
 	return (
 		<Tabs 
-			id="controlled-tabs" selectedTabClassName="border-gray-500 bg-slate-200"
+			id="controlled-tabs" selectedTabClassName="border-[#DDA1DD] bg-[#DDA1DD] text-white"
 			selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
 			<TabList>{tabList.map((name) => <Tab key={name}>{name}</Tab>)}</TabList>
 			{tabPanelList.map((panel, i) => <TabPanel key={i}><div className="inner-tab-panel">{panel}</div></TabPanel>)}

@@ -9,6 +9,7 @@ module.exports = {
     "gatsby-plugin-mdx",
     "gatsby-plugin-offline",
     "gatsby-plugin-postcss",
+    "gatsby-transformer-json",
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

@@ -75,24 +75,33 @@
         font-weight: normal;
     }
 
+    .home {
+        top: 1;
+    }
+
     .navbar li:last-child .navbutton {
         float: left;
     }
 
     .content {
         margin: 0 auto;
-        @apply sm:w-64 md:w-1/2 lg:w-1/2 text-left mt-8;
+        @apply w-[90%] md:w-4/6 lg:w-1/2 text-left mt-8;
     }
     
     footer {
         font-family: 'Courier New', Courier, monospace;
-        @apply w-full text-center pb-2 mt-2;
+        @apply w-[90%] md:w-full text-center pb-2 mt-4;
+    }
+
+    .footer-links {
+        margin: 0 auto;
+        @apply flex md:hidden w-1/2 flex-row justify-evenly;
     }
 
     .sidebar {
         width: 4rem;
         bottom: 1.5rem;
-        @apply md:flex sm:hidden fixed flex-col justify-end items-center;
+        @apply hidden md:flex fixed flex-col justify-end items-center;
     }
 
     .sidebar-link {
@@ -135,6 +144,31 @@
 
     .inner-tab-panel li {
         @apply text-sm mb-1;
+    }
+
+    .projects-table {
+        margin: 0 auto;
+        @apply p-16 text-left mt-12 w-[90%];
+    }
+
+    .projects-table th {
+        @apply text-left px-4 text-gray-500;
+    }
+
+    .projects-table td {
+        @apply text-left px-4 text-sm;
+    }
+
+    .projects-table tr:hover {
+        @apply bg-[#DDA1DD] text-white;
+    }
+
+    .projects-table tr {
+        @apply h-8;
+    }
+    
+    .projects-table a {
+        @apply ml-2 text-black inline-flex;
     }
 }
 

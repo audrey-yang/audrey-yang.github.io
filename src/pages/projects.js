@@ -1,5 +1,5 @@
 import * as React from "react";
-import {graphql} from "gatsby";
+import { graphql } from "gatsby";
 
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
@@ -8,7 +8,7 @@ import ProjectLine from '../components/ProjectLine';
 
 import "../styles/styles.css";
 
-const ProjectsPage = ({data}) => {
+const ProjectsPage = ({ data }) => {
 	const projectsList = data.allProjectsJson.nodes.map((node) => 
 		<ProjectLine data={node} />
 	);

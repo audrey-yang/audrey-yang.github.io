@@ -1,4 +1,11 @@
 [
+	{	"year": 2023,
+		"title": "TodoCal",
+		"context": "CIS 191: Unix and Linux Skills",
+		"tech": ["Bash"],
+		"src": "https://github.com/audrey-yang/todocal",
+		"website": ""
+	},
 	{   "year": 2022,
 		"title": "PennCloud",
 		"context": "CIS 505: Distributed Systems",
@@ -50,7 +57,7 @@
 	},
 	{   "year": 2021,
 		"title": "Markdown Parser",
-		"context": "CIS 522: Functional Programming",
+		"context": "CIS 552: Functional Programming",
 		"description": "Applicative parser translating Markdown to HTML.",
 		"tech": ["Haskell"],
 		"src": "https://github.com/jasminecao/markdown-parser"

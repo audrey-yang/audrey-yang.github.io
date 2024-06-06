@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
+import SLB from '../../content/experience/slb.mdx';
 import Facebook from '../../content/experience/facebook.mdx';
 import Meta from '../../content/experience/meta.mdx';
 import TA from '../../content/experience/ta.mdx';
@@ -11,8 +12,8 @@ import "../styles/styles.css";
 
 const ExperienceTabs = () => {
 	const [tabIndex, setTabIndex] = React.useState(0);
-	const tabList = ["Meta", "Penn CIS", "Facebook", "PennApps", "Perelman"];
-	const tabPanelList = [<Meta />, <TA />, <Facebook />, <PennApps />, <Perelman />];
+	const tabList = ["SLB", "Meta", "Penn CIS", "Facebook", "PennApps", "Perelman"];
+	const tabPanelList = [<SLB />, <Meta />, <TA />, <Facebook />, <PennApps />, <Perelman />];
 
 	return (
 		<Tabs 

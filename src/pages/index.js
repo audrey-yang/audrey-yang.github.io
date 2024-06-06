@@ -1,15 +1,15 @@
 import * as React from "react";
 import { Link, graphql } from "gatsby";
 
-import Navbar from '../components/Navbar';
-import Sidebar from '../components/Sidebar';
-import Footer from '../components/Footer';
-import ExperienceTabs from '../components/ExperienceTabs';
-import ProjectCard from '../components/ProjectCard';
-import Intro from '../../content/intro.mdx';
-import About from '../../content/about.mdx';
-import Contact from '../../content/contact.mdx';
-import Me from '../images/me.jpeg';
+import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
+import Footer from "../components/Footer";
+import ExperienceTabs from "../components/ExperienceTabs";
+import ProjectCard from "../components/ProjectCard";
+import Intro from "../../content/intro.mdx";
+import About from "../../content/about.mdx";
+import Contact from "../../content/contact.mdx";
+import Me from "../images/me.jpeg";
 
 import "../styles/styles.css";
 

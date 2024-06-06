@@ -6,9 +6,9 @@ const Footer = () => {
 	return (
 		<footer>
 			<p>
-				auyang@seas.upenn.edu 
+				audrey r. yang
 				<span className="hidden sm:inline"> •</span> <br className="inline sm:hidden" />
-				from philly, with <span className="inline text-[#DB7093]">♥︎</span></p>
+				from houston, with <span className="inline text-[#DB7093]">♥︎</span></p>
 			<div className="footer-links">
 				<a className="sidebar-link" href="https://www.github.com/audrey-yang" 
 					target="_blank" rel="noreferrer" title="GitHub">

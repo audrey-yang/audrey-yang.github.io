@@ -1,4 +1,18 @@
 [
+	{	"year": 2024,
+		"title": "Taskflow",
+		"context": "My friend",
+		"tech": ["Electron", "React.js", "PouchDB"],
+		"src": "https://github.com/audrey-yang/taskflow2",
+		"website": ""
+	},
+	{	"year": 2024,
+		"title": "Mini-Chatroom",
+		"context": "A job interview task",
+		"tech": ["Django", "Websockets", "React.js", "PostgreSQL"],
+		"src": "",
+		"website": ""
+	},
 	{	"year": 2023,
 		"title": "TodoCal",
 		"context": "CIS 191: Unix and Linux Skills",
@@ -77,7 +91,7 @@
 	},
 	{   "year": 2020,
 		"title": "Seat Booker",
-		"context": "WCEC",
+		"context": "My church",
 		"description": "Seat-reservation system created to help my church's COVID-19 reopening effort.",
 		"tech": ["Django"],
 		"website": "http://seatbooker.herokuapp.com/"

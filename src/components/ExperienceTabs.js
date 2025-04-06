@@ -1,27 +1,16 @@
 import * as React from "react";
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 import SLB from '../../content/experience/slb.mdx';
 import Facebook from '../../content/experience/facebook.mdx';
 import Meta from '../../content/experience/meta.mdx';
-import TA from '../../content/experience/ta.mdx';
-import PennApps from '../../content/experience/pennapps.mdx';
-import Perelman from '../../content/experience/perelman.mdx';
 
 import "../styles/styles.css";
 
 const ExperienceTabs = () => {
-	const [tabIndex, setTabIndex] = React.useState(0);
-	const tabList = ["SLB", "Meta", "Penn CIS", "Facebook", "PennApps", "Perelman"];
-	const tabPanelList = [<SLB />, <Meta />, <TA />, <Facebook />, <PennApps />, <Perelman />];
+	const experienceList = [<SLB />, <Meta />, <Facebook />];
 
 	return (
-		<Tabs 
-			id="controlled-tabs" selectedTabClassName="border-[#DB7093] bg-[#DB7093] text-white"
-			selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-			<TabList>{tabList.map((name) => <Tab key={name}>{name}</Tab>)}</TabList>
-			{tabPanelList.map((panel, i) => <TabPanel key={i}><div className="inner-tab-panel">{panel}</div></TabPanel>)}
-		</Tabs>
+		<>{experienceList.map((panel, i) => <div className="inner-tab-panel mb-4">{panel}</div>)}</>
 	);
 };
 export default ExperienceTabs;

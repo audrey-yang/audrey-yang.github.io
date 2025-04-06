@@ -1,13 +1,11 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import Navbar from "../components/Navbar";
-
 import "../styles/styles.css";
 
 const IndexPage = () => {
 	return (
-		<div className="h-screen bg-[mistyrose]">
+		<div className="landing h-screen bg-[mistyrose]">
 			<div className="flex flex-row min-h-[86vh]">
 				<main className="w-full min-h-[86vh] flex flex-col">
 					<div className="self-center justify-self-center my-auto">

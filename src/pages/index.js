@@ -16,7 +16,12 @@ const IndexPage = () => {
 						</p>
 						<div className="flex flex-row content-between">
 							<p><Link className="navbutton" to="/about">about me</Link></p>
-							<p><Link className="navbutton" to="/projects">projects</Link></p>
+							<p><a className="navbutton" href="https://www.github.com/audrey-yang" 
+								target="_blank" rel="noreferrer" title="GitHub">github</a></p>
+							<p><a className="navbutton" href="https://www.linkedin.com/in/audreyryang/" 
+								target="_blank" rel="noreferrer" title="Linkedin">linkedin</a></p>
+							<p><a className="navbutton" href="https://bsky.app/profile/aryang.bsky.social" 
+								target="_blank" rel="noreferrer" title="Bluesky">bsky</a></p>
 						</div>
 					</div>
 				</main>

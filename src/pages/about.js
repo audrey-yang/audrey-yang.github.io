@@ -1,11 +1,11 @@
 import * as React from "react";
-import { graphql } from "gatsby";
 
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
 import ExperienceTabs from "../components/ExperienceTabs";
 import Summary from "../../content/summary.mdx";
+import Education from "../../content/education.mdx";
 import Contact from "../../content/contact.mdx";
 
 import "../styles/styles.css";
@@ -25,6 +25,8 @@ const AboutPage = () => {
 						<Summary />
 						<h3>Experience</h3>
 						<ExperienceTabs />
+						<h3>Education</h3>
+						<Education />
 						<Contact />
 					</div>
 				</main>
@@ -33,25 +35,5 @@ const AboutPage = () => {
 		</div>
 	);
 };
-
-export const query = graphql`query {
-	allHighlightProjectsJson {
-		nodes {
-			context
-			description
-			src
-			tech
-			title
-			website
-			year
-			image {
-				src {
-					publicURL
-				}
-			}
-		}
-	}
-}
-`;
 
 export default AboutPage;

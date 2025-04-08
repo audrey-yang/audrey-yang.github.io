@@ -10,7 +10,7 @@ const ExperienceTabs = () => {
 	const experienceList = [<SLB />, <Meta />, <Facebook />];
 
 	return (
-		<>{experienceList.map((panel, i) => <div className="inner-tab-panel mb-4">{panel}</div>)}</>
+		<>{experienceList.map((panel, i) => <div key={i} className="inner-tab-panel mb-4">{panel}</div>)}</>
 	);
 };
 export default ExperienceTabs;

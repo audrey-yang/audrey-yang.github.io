@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-404-js-a2efb3dc9ccbc26939c8.js","mappings":"wJAMA,UAJkBA,IACVC,EAAAA,cAAA,WAAK,Q","sources":["webpack://audrey-yang.github.io/./src/pages/404.js"],"sourcesContent":["import * as React from \"react\";\n\nconst ErrorPage = () => {\n\treturn <div>Oops!</div>;\n}\n\nexport default ErrorPage;"],"names":["ErrorPage","React"],"sourceRoot":""}

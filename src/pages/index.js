@@ -6,15 +6,15 @@ import "../styles/styles.css";
 const IndexPage = () => {
 	return (
 		<div className="landing h-screen bg-[mistyrose]">
-			<div className="flex flex-row min-h-[86vh]">
-				<main className="w-full min-h-[86vh] flex flex-col">
+			<div className="flex flex-row flex-wrap min-h-[86vh]">
+				<main className="w-full min-h-[86vh] flex flex-col flex-wrap">
 					<div className="self-center justify-self-center my-auto px-4 mx-4">
 						<h2>a.r.yang</h2>
 						<p>
 							hello, world!<br/>
 							i'm audrey. welcome to my corner of the internet.
 						</p>
-						<div className="flex flex-row content-between">
+						<div className="flex flex-col md:flex-row flex-wrap content-between justify-self-center">
 							<p><a className="link" href="https://www.github.com/audrey-yang" 
 								target="_blank" rel="noreferrer" title="GitHub">github</a></p>
 							<p><a className="link" href="https://www.linkedin.com/in/audreyryang/" 

@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 
 import "../styles/styles.css";
 
@@ -14,15 +13,13 @@ const IndexPage = () => {
 							hello, world!<br/>
 							i'm audrey. welcome to my corner of the internet.
 						</p>
-						<div className="flex flex-col md:flex-row flex-wrap content-between justify-self-center">
+						<div className="flex flex-row flex-wrap content-between justify-self-center">
 							<p><a className="link" href="https://www.github.com/audrey-yang" 
 								target="_blank" rel="noreferrer" title="GitHub">github</a></p>
 							<p><a className="link" href="https://www.linkedin.com/in/audreyryang/" 
 								target="_blank" rel="noreferrer" title="Linkedin">linkedin</a></p>
 							<p><a className="link" href="https://blog.aryang.dev/" 
 								target="_blank" rel="noreferrer" title="Blog">blog</a></p>
-							<p><a className="link" href="https://bsky.app/profile/aryang.bsky.social" 
-								target="_blank" rel="noreferrer" title="Bluesky">bsky</a></p>
 							<p><a className="link" href="https://media.ebird.org/catalog?sort=obs_date_desc&userId=USER7850062&view=grid" 
 								target="_blank" rel="noreferrer" title="Macaulay Library">photography</a></p>
 						</div>
